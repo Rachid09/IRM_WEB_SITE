@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
 *, *::before, *::after {
   margin: 0;
@@ -7,13 +8,22 @@
 body {
   box-sizing: inherit; }
 
+.heading--third {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 1.2rem; }
+
+.sub-heading {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 1rem;
+  color: #b7b7b7; }
+
 .navbar {
   display: flex;
   height: 4rem;
   width: 100%;
   justify-content: flex-end;
   align-items: center;
-  background-color: #1D71B8; }
+  background-color: #1d71b8; }
   .navbar__list {
     flex: 0 0 30%;
     display: flex;
@@ -48,4 +58,31 @@ body {
 
 .bx-wrapper {
   border: none !important;
-  box-shadow: none; }
+  box-shadow: none;
+  margin-bottom: 0 !important; }
+
+.bx-viewport {
+  height: 520px !important; }
+
+.bx-pager {
+  bottom: 20px !important; }
+
+.statistics {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 4rem 5rem; }
+  .statistics__elements {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+  .statistics__element {
+    display: flex;
+    align-items: flex-end; }
+    .statistics__element .description {
+      margin-left: 1rem; }
+    .statistics__element i {
+      font-size: 3rem;
+      color: #1d71b8; }
+    .statistics__element p {
+      margin-top: 10px; }

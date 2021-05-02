@@ -1,0 +1,27 @@
+.statistics {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 4rem 5rem;
+
+  &__elements {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__element {
+    display: flex;
+    align-items: flex-end;
+    .description {
+      margin-left: 1rem;
+    }
+
+    i {
+      font-size: 3rem;
+      color: $bg-blue;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+}
