@@ -22,16 +22,30 @@
 }
 .navbar-fixed{
     display: flex;
-    padding: 0 3rem;
+    padding: .8rem 3rem;
+    justify-content: space-between;
+   
    &__list{
        list-style-type: none;
+       display: flex;
+       flex: 0 0 60%;
+       align-items: center;
+       justify-content: flex-end;
      
-
    }
    &__item{
+       flex: 0 0 8rem;
+       display: flex;
+       justify-content: flex-end;
+
 
    }
    &__link{
+       text-decoration: none;
+       color: #000;
+       font-family: $poppins;
+       font-weight: 400;
+       font-size: 1rem;
 
    }
 }
