@@ -24,6 +24,11 @@ body {
   line-height: 2;
   color: #858585; }
 
+.heading-second {
+  font-size: 1.9rem;
+  font-family: "ABeeZee", sans-serif;
+  color: #fff; }
+
 .navbar {
   display: flex;
   height: 4rem;
@@ -82,11 +87,12 @@ body {
 
 .cta-btn {
   padding: 12px 31px 12px 31px;
-  font-size: 15px;
+  font-size: 1rem;
   color: #ffffff;
   background-color: #1d71b8;
   text-decoration: none;
-  border-radius: 2px; }
+  border-radius: 2px;
+  font-family: "ABeeZee", sans-serif; }
 
 .statistics {
   display: flex;
@@ -158,8 +164,18 @@ body {
     object-fit: cover; }
 
 .cta__description {
+  padding: 4rem 3rem;
   flex: 0 0 50%;
-  background: url(../../img/hp2-col-4.jpg);
+  background: url(../../img/resized/hp2-col-4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+  .cta__description h2 {
+    margin-bottom: 2rem; }
+  .cta__description p {
+    width: 80%;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-family: "ABeeZee", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8; }
