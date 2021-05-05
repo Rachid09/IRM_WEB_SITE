@@ -1,0 +1,21 @@
+.features {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 4rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    i {
+      color: $bg-blue;
+      font-size: 3rem;
+      margin-bottom: 0.7rem;
+    }
+    h4 {
+      color: #858585;
+    }
+  }
+}
