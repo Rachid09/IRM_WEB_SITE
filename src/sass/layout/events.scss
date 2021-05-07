@@ -1,0 +1,61 @@
+.events {
+  padding-bottom: 2rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+  &__card {
+    grid-column: span 1;
+    font-family: $abeeze;
+  }
+  &__img {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__description {
+    display: flex;
+    margin-top: 1rem;
+  }
+  &__details {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3.3px solid $bg-blue;
+    &--day {
+      font-size: 2.2rem;
+      margin-bottom: 0.4rem;
+      color: $bg-blue;
+    }
+    &--months {
+      color: #000;
+      font-size: 1rem;
+    }
+  }
+  &__heading {
+    color: #000;
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+  &__time {
+    span:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+    font-size: 0.85rem;
+    color: $bg-blue;
+    i {
+      margin-right: 10px;
+    }
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}

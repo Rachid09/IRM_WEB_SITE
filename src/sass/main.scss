@@ -4,6 +4,7 @@
 @import "./abstract/variables.scss";
 @import "./base/base";
 @import "./base/typography";
+@import "./base/utilities.scss";
 @import "./components/navbar.scss";
 @import "./components/carousel.scss";
 @import "./components/buttons.scss";
@@ -11,3 +12,4 @@
 @import "./layout/irm-description.scss";
 @import "./layout/features";
 @import "./layout/cta.scss";
+@import "./layout/events.scss";

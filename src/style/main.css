@@ -11,7 +11,7 @@ body {
 
 .heading-third {
   font-family: "ABeeZee", sans-serif;
-  font-size: 1.2rem; }
+  font-size: 1.6rem; }
 
 .sub-heading {
   font-family: "ABeeZee", sans-serif;
@@ -28,6 +28,15 @@ body {
   font-size: 1.9rem;
   font-family: "ABeeZee", sans-serif;
   color: #fff; }
+
+.heading-primary {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem; }
+
+.pd-md-2 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 .navbar {
   display: flex;
@@ -179,3 +188,51 @@ body {
     font-family: "ABeeZee", sans-serif;
     font-size: 0.9rem;
     line-height: 1.8; }
+
+.events {
+  padding-bottom: 2rem; }
+  .events__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem; }
+  .events__card {
+    grid-column: span 1;
+    font-family: "ABeeZee", sans-serif; }
+  .events__img {
+    width: 100%; }
+    .events__img img {
+      width: 100%;
+      height: auto; }
+  .events__description {
+    display: flex;
+    margin-top: 1rem; }
+  .events__details {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column; }
+  .events__date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3.3px solid #1d71b8; }
+    .events__date--day {
+      font-size: 2.2rem;
+      margin-bottom: 0.4rem;
+      color: #1d71b8; }
+    .events__date--months {
+      color: #000;
+      font-size: 1rem; }
+  .events__heading {
+    color: #000;
+    font-size: 1.15rem;
+    line-height: 1.4; }
+  .events__time {
+    font-size: 0.85rem;
+    color: #1d71b8;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column; }
+    .events__time span:not(:last-child) {
+      margin-bottom: 0.4rem; }
+    .events__time i {
+      margin-right: 10px; }
