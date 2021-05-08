@@ -1,10 +1,13 @@
-*,*::before,*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    box-sizing: inherit;
-    
+body {
+  box-sizing: inherit;
 }
-
+a {
+  text-decoration: none;
+}

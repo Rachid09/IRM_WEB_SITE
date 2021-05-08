@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
   box-sizing: inherit; }
+
+a {
+  text-decoration: none; }
 
 .heading-third {
   font-family: "ABeeZee", sans-serif;
@@ -42,6 +47,13 @@ body {
 .pd-md-3 {
   padding-left: 3rem;
   padding-right: 3rem; }
+
+.border-bm {
+  border-bottom: 1.3px solid rgba(141, 141, 141, 0.15);
+  padding-bottom: 0.8rem; }
+
+.pd-left-md {
+  padding-left: 2rem; }
 
 .navbar {
   display: flex;
@@ -264,3 +276,60 @@ body {
     .profs .prof__image {
       border-radius: 50%;
       margin-bottom: 2rem; }
+
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  font-family: "ABeeZee", sans-serif; }
+  .footer__logo-box {
+    width: 15rem; }
+    .footer__logo-box img {
+      width: 100%;
+      height: 100%; }
+  .footer__text {
+    padding: 1rem 0; }
+  .footer__column {
+    flex: 0 0 30%; }
+    .footer__column div {
+      margin-bottom: 2rem; }
+  .footer__heading {
+    color: #fff;
+    padding-bottom: 1.2rem;
+    border-bottom: 2px solid #1d71b8; }
+  .footer__email :nth-child(2) {
+    color: #fff; }
+  .footer__social-icons {
+    border-bottom: 2px solid #1d71b8;
+    padding-bottom: 3rem; }
+    .footer__social-icons i {
+      padding: 2rem 0;
+      font-size: 1.3rem; }
+    .footer__social-icons i:not(:last-child) {
+      padding-right: 1rem; }
+  .footer__list {
+    list-style-type: none; }
+    .footer__list--item {
+      display: flex;
+      margin-bottom: 2rem;
+      font-size: 1rem; }
+      .footer__list--item .fstm {
+        line-height: 2; }
+      .footer__list--item a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        transition: 0.2s all ease-in-out; }
+      .footer__list--item a:hover {
+        color: #fff; }
+        .footer__list--item a:hover i {
+          color: #fff; }
+      .footer__list--item i {
+        font-size: 1.5rem;
+        padding-right: 1.2rem; }
+  .footer__text, .footer__list--item,
+  .footer a,
+  .footer i {
+    color: #8d8d8d; }

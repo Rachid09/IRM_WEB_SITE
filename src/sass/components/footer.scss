@@ -1,0 +1,79 @@
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: $bg-footer;
+  display: flex;
+  justify-content: space-between;
+  font-family: $abeeze;
+  &__logo-box {
+    width: 15rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__text {
+    padding: 1rem 0;
+  }
+  &__column {
+    flex: 0 0 30%;
+    div {
+      margin-bottom: 2rem;
+    }
+  }
+  &__heading {
+    color: #fff;
+    padding-bottom: 1.2rem;
+    border-bottom: 2px solid $bg-blue;
+  }
+  &__email {
+    :nth-child(2) {
+      color: #fff;
+    }
+  }
+  &__social-icons {
+    border-bottom: 2px solid $bg-blue;
+    padding-bottom: 3rem;
+    i {
+      padding: 2rem 0;
+      font-size: 1.3rem;
+    }
+    i:not(:last-child) {
+      padding-right: 1rem;
+    }
+  }
+  &__list {
+    list-style-type: none;
+    &--item {
+      display: flex;
+
+      .fstm {
+        line-height: 2;
+      }
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        transition: 0.2s all ease-in-out;
+      }
+      a:hover {
+        color: #fff;
+        i {
+          color: #fff;
+        }
+      }
+      i {
+        font-size: 1.5rem;
+        padding-right: 1.2rem;
+      }
+    }
+  }
+  &__text,
+  &__list--item,
+  a,
+  i {
+    color: $gray-footer;
+  }
+}
