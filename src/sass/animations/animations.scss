@@ -1,0 +1,15 @@
+@keyframes zoomInOut {
+  0% {
+    box-shadow: none;
+    transform: scaleY(1);
+  }
+
+  50% {
+    box-shadow: 0 1rem 4rem rgba(black, 0.3);
+    transform: scale(1.08);
+  }
+  100% {
+    box-shadow: none;
+    transform: scaleY(1);
+  }
+}
