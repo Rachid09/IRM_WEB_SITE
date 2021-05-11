@@ -1,0 +1,19 @@
+.objective {
+  &__wrapper {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    .description {
+      flex: 0 0 45%;
+    }
+    .image {
+      flex: 0 0 45%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+}
