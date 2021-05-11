@@ -1,6 +1,6 @@
 .footer {
   padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   background-color: $bg-footer;
   display: flex;
   justify-content: space-between;
@@ -76,4 +76,15 @@
   i {
     color: $gray-footer;
   }
+}
+.copyrights {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: $bg-footer;
+  color: $gray-footer;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  border-top: 1px solid rgba($color: $gray-footer, $alpha: 0.3);
+  padding: 3rem 2rem;
 }

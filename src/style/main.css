@@ -9,7 +9,9 @@
   box-sizing: border-box; }
 
 body {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 0.8rem; }
 
 a {
   text-decoration: none; }
@@ -55,6 +57,17 @@ a {
 .pd-left-md {
   padding-left: 2rem; }
 
+@keyframes zoomInOut {
+  0% {
+    box-shadow: none;
+    transform: scaleY(1); }
+  50% {
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
+    transform: scale(1.08); }
+  100% {
+    box-shadow: none;
+    transform: scaleY(1); } }
+
 .navbar {
   display: flex;
   height: 4rem;
@@ -63,17 +76,31 @@ a {
   align-items: center;
   background-color: #1d71b8; }
   .navbar__list {
-    flex: 0 0 30%;
+    flex: 0 0 35%;
     display: flex;
-    justify-content: space-around;
-    list-style-type: none; }
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    height: 100%; }
   .navbar__item {
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: 0.2s all ease-in-out; }
+  .navbar__item:hover {
+    background-color: #fff; }
+  .navbar__item:hover .navbar__link {
+    color: #df5050; }
   .navbar__link {
     color: #fff;
     text-decoration: none;
-    font-size: 0.9rem;
-    font-family: "Roboto", sans-serif; }
+    font-size: 1rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    transition: 0.2s all ease-in-out; }
 
 .navbar-fixed {
   display: flex;
@@ -99,6 +126,27 @@ a {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 1rem; }
+  .navbar-fixed__link {
+    position: relative; }
+  .navbar-fixed__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #1d71b8;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s, transform 0.1s ease-out; }
+  .navbar-fixed__link:active::before {
+    background-color: #1d71b8; }
+  .navbar-fixed__link:hover, .navbar-fixed__link:focus {
+    color: #1d71b8; }
+  .navbar-fixed__link:hover::before, .navbar-fixed__link:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1); }
 
 .bx-wrapper {
   border: none !important;
@@ -119,6 +167,23 @@ a {
   text-decoration: none;
   border-radius: 2px;
   font-family: "ABeeZee", sans-serif; }
+
+.btn-inline {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding-bottom: 0.3rem;
+  color: #1d71b8;
+  border: none;
+  border-bottom: 1px solid #1d71b8;
+  background-color: transparent; }
+
+.btn-inline:focus {
+  outline: none; }
+
+.btn-inline:hover span {
+  margin-left: 0.5rem;
+  transition: all 0.15s ease-in-out; }
 
 .statistics {
   display: flex;
@@ -215,15 +280,22 @@ a {
     grid-gap: 2rem; }
   .events__card {
     grid-column: span 1;
-    font-family: "ABeeZee", sans-serif; }
+    font-family: "ABeeZee", sans-serif;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.1), 0 3px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    transition: 0.2s all ease-in-out; }
+    .events__card:hover {
+      transform: translateY(-0.2rem) scale(1.05);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.1); }
   .events__img {
     width: 100%; }
     .events__img img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      border-radius: 0.5rem 0.5rem 0 0; }
   .events__description {
     display: flex;
-    margin-top: 1rem; }
+    padding: 1.5rem; }
   .events__details {
     margin-left: 2rem;
     display: flex;
@@ -255,6 +327,13 @@ a {
     .events__time i {
       margin-right: 10px; }
 
+.btn-inline-box {
+  width: 100%;
+  display: flex;
+  padding: 3rem 0;
+  justify-content: center;
+  font-family: inherit; }
+
 .profs {
   width: 100%;
   background-color: #f2f2f2;
@@ -279,7 +358,7 @@ a {
 
 .footer {
   padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   background-color: #181818;
   display: flex;
   justify-content: space-between;
@@ -333,3 +412,14 @@ a {
   .footer a,
   .footer i {
     color: #8d8d8d; }
+
+.copyrights {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #181818;
+  color: #8d8d8d;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  border-top: 1px solid rgba(141, 141, 141, 0.3);
+  padding: 3rem 2rem; }

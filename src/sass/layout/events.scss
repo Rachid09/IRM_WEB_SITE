@@ -8,17 +8,26 @@
   &__card {
     grid-column: span 1;
     font-family: $abeeze;
+    box-shadow: 0 3px 30px rgba(#000, 0.1), 0 3px 20px rgba(#000, 0.1);
+    border-radius: 0.5rem;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      transform: translateY(-0.2rem) scale(1.05);
+      box-shadow: 0 20px 30px rgba(#000, 0.1), 0 20px 20px rgba(#000, 0.1);
+    }
   }
+
   &__img {
     width: 100%;
     img {
       width: 100%;
       height: auto;
+      border-radius: 0.5rem 0.5rem 0 0;
     }
   }
   &__description {
     display: flex;
-    margin-top: 1rem;
+    padding: 1.5rem;
   }
   &__details {
     margin-left: 2rem;
@@ -58,4 +67,11 @@
     display: flex;
     flex-direction: column;
   }
+}
+.btn-inline-box {
+  width: 100%;
+  display: flex;
+  padding: 3rem 0;
+  justify-content: center;
+  font-family: inherit;
 }
