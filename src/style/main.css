@@ -76,6 +76,9 @@ a {
 .mb-4 {
   margin-bottom: 4rem; }
 
+.mb-6 {
+  margin-bottom: 6rem; }
+
 .mb-1 {
   margin-bottom: 1rem; }
 
@@ -520,3 +523,34 @@ a {
       color: #8d8d8d; }
       .admission-documents--item i {
         padding-right: 1rem; }
+
+.programme {
+  width: 100%;
+  padding: 2rem 3rem; }
+  .programme .modules {
+    display: flex; }
+  .programme .module {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem; }
+    .programme .module--name {
+      flex: 0 0 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(29, 113, 184, 0.9);
+      color: #fefefe;
+      border-radius: 3px; }
+    .programme .module--prerequies {
+      position: relative;
+      flex: 0 0 38%; }
+      .programme .module--prerequies h2 {
+        position: absolute;
+        top: -3rem; }
+    .programme .module--objective {
+      position: relative;
+      flex: 0 0 38%; }
+      .programme .module--objective h2 {
+        position: absolute;
+        top: -3rem; }

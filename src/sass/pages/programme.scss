@@ -1,0 +1,41 @@
+.programme {
+  width: 100%;
+  padding: 2rem 3rem;
+
+  &__modules {
+  }
+  .modules {
+    display: flex;
+  }
+  .module {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    &--name {
+      flex: 0 0 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba($bg-blue, 0.9);
+      color: #fefefe;
+      border-radius: 3px;
+    }
+    &--prerequies {
+      position: relative;
+      h2 {
+        position: absolute;
+        top: -3rem;
+      }
+      flex: 0 0 38%;
+    }
+    &--objective {
+      position: relative;
+      h2 {
+        position: absolute;
+        top: -3rem;
+      }
+      flex: 0 0 38%;
+    }
+  }
+}
