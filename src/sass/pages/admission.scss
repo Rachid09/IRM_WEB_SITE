@@ -1,0 +1,48 @@
+.admission {
+  width: 100%;
+  &-conditions {
+    padding-left: 4rem;
+    &__text {
+      padding-left: 3rem;
+      font-size: 1rem;
+      div > p {
+        line-height: 1.7;
+        padding-left: 2rem;
+        margin: 1rem 0;
+      }
+      display: flex;
+      width: 85%;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  &-documents {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+    &--image {
+      flex: 0 0 48%;
+      img {
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+    &__list {
+      flex: 0 0 48%;
+      list-style-type: none;
+    }
+    &--item {
+      i {
+        padding-right: 1rem;
+      }
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+      color: $gray-footer;
+    }
+  }
+}

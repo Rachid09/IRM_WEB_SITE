@@ -18,63 +18,80 @@
     <title>IRM site</title>
   </head>
   <body>
-    <header class="header">
-      <div class="top-header">
-        <nav class="navbar">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">Evenements</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">s'authentifier</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">Je condidate</a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="navbar-fixed">
-          <div class="logo-irm">
-            <a href="index.html">
-              <img src="./img/Frame.png" alt="logo-irm" />
-            </a>
-          </div>
-          <ul class="navbar-fixed__list">
-            <li class="navbar-fixed__item">
-              <a href="#" class="navbar-fixed__link">Objective</a>
-            </li>
-            <li class="navbar-fixed__item">
-              <a href="#" class="navbar-fixed__link">Admission</a>
-            </li>
-            <li class="navbar-fixed__item">
-              <a href="#" class="navbar-fixed__link">Programme</a>
-            </li>
-            <li class="navbar-fixed__item">
-              <a href="#" class="navbar-fixed__link">Debouchés</a>
-            </li>
-            <li class="navbar-fixed__item">
-              <a href="#" class="navbar-fixed__link">Help</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="top-header">
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Evenements</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">s'authentifier</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Je condidate</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="navbar-fixed">
+        <div class="logo-irm">
+          <a href="index.html">
+            <img src="./img/Frame.png" alt="logo-irm" />
+          </a>
+        </div>
+        <ul class="navbar-fixed__list">
+          <li class="navbar-fixed__item">
+            <a href="objective.html" class="navbar-fixed__link">Objective</a>
+          </li>
+          <li class="navbar-fixed__item">
+            <a href="admission.html" class="navbar-fixed__link">Admission</a>
+          </li>
+          <li class="navbar-fixed__item">
+            <a href="programme.html" class="navbar-fixed__link">Programme</a>
+          </li>
+          <li class="navbar-fixed__item">
+            <a href="debouches.html" class="navbar-fixed__link">Debouchés</a>
+          </li>
+          <li class="navbar-fixed__item">
+            <a href="#" class="navbar-fixed__link">Help</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-    <section class="admission">
-      <h1 class="heading-primary">Ojbective de la formation</h1>
-      <div class="description">
-        Pour être admis au programme de Licence Sciences et Techniques
-        Informatiques, Réseaux et Multimédia, il faut satisfaire aux conditions
-        suivantes : • Niveau requis : Titulaire d'un DEUST MIP ou DEUG SMI. -
-        Pré-requis pédagogiques : • Programme du DEUST MIP. • Programme du DEUG
-        SMI. - Procédure de sélection : • Sélection sur dossier : La sélection
-        des candidats se fait à leur demande sur la base de leurs dossiers
-        scolaires. Les dossiers sont examinés par la commission de recrutement
-        de l’établissement qui, après étude de dossier peut décider d’autoriser
-        le candidat à s’inscrire.
-      </div>
-      <div class="image">
-        <img src="./img/resized/6.jpg" alt="" />
+    <section class="programme">
+      <div class="programme__modules">
+        <h1 class="heading-primary">Descriptif des modules</h1>
+        <div class="modules__wrapper">
+          <div class="module">
+            <div class="module--name">
+              <h2 class="heading-second">M25</h2>
+            </div>
+            <div class="module--objective">
+              <h2>Objectifs du module</h2>
+              <p>
+                
+                Ce module introduit les notions de bases en multimédia avec un
+                point de vue traitement du signal ; en vue de la compréhension
+                de la problématique scientifique et informatique liée aux
+                applications de traitement de l'information multimédia. Il
+                présente les fondements scientifiques et technologiques
+                indispensables pour le traitement numérique de l'information
+                multimédia, en particulier l'image et le son. Les outils,
+                algébriques, géométriques, de traitement du signal, seront
+                appliqués lors de séances de travaux pratiques permettant ainsi
+                d’illustrer les mécanismes principaux sur lesquels s'appuient
+                l'analyse, le traitement d'images et de sons.
+              </p>
+            </div>
+            <div class="module--prerequies">
+              <h2>Pre-requis pedagogiques</h2>
+              <p>
+                Bases informatiques et mathématiques de niveau DEUST MIP/SMI
+                (FST/FS)
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

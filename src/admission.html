@@ -18,95 +18,148 @@
     <title>IRM site</title>
   </head>
   <body>
-    <header class="header">
-      <div class="top-header">
-        <nav class="navbar">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">Evenements</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">s'authentifier</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">Je condidate</a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="navbar-fixed">
-          <div class="logo-irm">
-            <a href="index.html">
-              <img src="./img/Frame.png" alt="logo-irm" />
-            </a>
-          </div>
-          <ul class="navbar-fixed__list">
-            <li class="navbar-fixed__item">
-              <a href="#" class="navbar-fixed__link">Objective</a>
-            </li>
-            <li class="navbar-fixed__item">
-              <a href="#" class="navbar-fixed__link">Admission</a>
-            </li>
-            <li class="navbar-fixed__item">
-              <a href="#" class="navbar-fixed__link">Programme</a>
-            </li>
-            <li class="navbar-fixed__item">
-              <a href="#" class="navbar-fixed__link">Debouchés</a>
-            </li>
-            <li class="navbar-fixed__item">
-              <a href="#" class="navbar-fixed__link">Help</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <section class="statistics pd-md-3">
-      <ul class="statistics__elements">
-        <li class="statistics__element">
-          <i class="iconsminds-trophy"></i>
-          <div class="description">
-            <h3 class="heading-third">35 ans</h3>
-            <p class="sub-heading">d'experineces</p>
-          </div>
-        </li>
-        <li class="statistics__element">
-          <i class="iconsminds-student-male-female"></i>
-          <div class="description">
-            <h3 class="heading-third">60</h3>
-            <p class="sub-heading">Etudiants</p>
-          </div>
-        </li>
-        <li class="statistics__element">
-          <i class="iconsminds-administrator"></i>
-          <div class="description">
-            <h3 class="heading-third">10</h3>
-            <p class="sub-heading">Enseignants</p>
-          </div>
-        </li>
-        <li class="statistics__element">
-          <i class="iconsminds-books"></i>
-          <div class="description">
-            <h3 class="heading-third">12</h3>
-            <p class="sub-heading">Modules</p>
-          </div>
-        </li>
-      </ul>
-    </section>
+    <div class="top-header">
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Evenements</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">s'authentifier</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Je condidate</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="navbar-fixed">
+        <div class="logo-irm">
+          <a href="index.html">
+            <img src="./img/Frame.png" alt="logo-irm" />
+          </a>
+        </div>
+        <ul class="navbar-fixed__list">
+          <li class="navbar-fixed__item">
+            <a href="objective.html" class="navbar-fixed__link">Objective</a>
+          </li>
+          <li class="navbar-fixed__item">
+            <a href="admission.html" class="navbar-fixed__link">Admission</a>
+          </li>
+          <li class="navbar-fixed__item">
+            <a href="programme.html" class="navbar-fixed__link">Programme</a>
+          </li>
+          <li class="navbar-fixed__item">
+            <a href="debouches.html" class="navbar-fixed__link">Debouchés</a>
+          </li>
+          <li class="navbar-fixed__item">
+            <a href="#" class="navbar-fixed__link">Help</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <section class="admission">
-      <h1 class="heading-primary">Ojbective de la formation</h1>
-      <div class="description">
-        Pour être admis au programme de Licence Sciences et Techniques
-        Informatiques, Réseaux et Multimédia, il faut satisfaire aux conditions
-        suivantes : • Niveau requis : Titulaire d'un DEUST MIP ou DEUG SMI. -
-        Pré-requis pédagogiques : • Programme du DEUST MIP. • Programme du DEUG
-        SMI. - Procédure de sélection : • Sélection sur dossier : La sélection
-        des candidats se fait à leur demande sur la base de leurs dossiers
-        scolaires. Les dossiers sont examinés par la commission de recrutement
-        de l’établissement qui, après étude de dossier peut décider d’autoriser
-        le candidat à s’inscrire.
+      <div class="admission-conditions mb-4">
+        <h1 class="heading-primary mb-4 mt-4">
+          Modalités d'admission au semestre 5 dans le cadre des passrelles
+        </h1>
+        <div class="admission-conditions__text">
+          <p class="mb-1">
+            Pour être admis au programme de Licence Sciences et Techniques
+            Informatiques, Réseaux et Multimédia, il faut satisfaire aux
+            conditions suivantes :
+          </p>
+          <div>
+            Pré-requis pédagogiques :
+            <p><i class="far fa-dot-circle"></i> Titulaire d'un DEUST MIP.</p>
+            <p><i class="far fa-dot-circle"></i> Titulaire d'un DEUG SMI.</p>
+          </div>
+          <div>
+            Procédure de sélection :
+            <p>
+              <i class="far fa-dot-circle"></i>
+              La sélection des candidats se fait à leur demande sur la base de
+              leurs dossiers scolaires. Les dossiers sont examinés par la
+              commission de recrutement de l’établissement qui, après étude de
+              dossier peut décider d’autoriser le candidat à s’inscrire.
+            </p>
+          </div>
+          <div class="text-center mb-2 mt-2">
+            <a href="" class="cta-btn">Je candidate</a>
+          </div>
+        </div>
       </div>
-      <div class="image">
-        <img src="./img/resized/6.jpg" alt="" />
+
+      <section class="statistics pd-md-3">
+        <ul class="statistics__elements">
+          <li class="statistics__element">
+            <i class="iconsminds-trophy"></i>
+            <div class="description">
+              <h3 class="heading-third">35 ans</h3>
+              <p class="sub-heading">d'experineces</p>
+            </div>
+          </li>
+          <li class="statistics__element">
+            <i class="iconsminds-student-male-female"></i>
+            <div class="description">
+              <h3 class="heading-third">60</h3>
+              <p class="sub-heading">Etudiants</p>
+            </div>
+          </li>
+          <li class="statistics__element">
+            <i class="iconsminds-administrator"></i>
+            <div class="description">
+              <h3 class="heading-third">10</h3>
+              <p class="sub-heading">Enseignants</p>
+            </div>
+          </li>
+          <li class="statistics__element">
+            <i class="iconsminds-books"></i>
+            <div class="description">
+              <h3 class="heading-third">12</h3>
+              <p class="sub-heading">Modules</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="admission-documents pb-3 mt-4">
+        <h1 class="heading-primary mb-4">Pièces à fournir</h1>
+        <div>
+          <div class="admission-documents--image">
+            <img
+              src="./img/resized/pièce-à-fournir-scaled-800x450.jpg"
+              alt=""
+            />
+          </div>
+          <ul class="admission-documents__list">
+            <li class="admission-documents--item">
+              <i class="far fa-dot-circle"></i>5 photos d’identité
+            </li>
+            <li class="admission-documents--item">
+              <i class="far fa-dot-circle"></i>1 extrait d’acte de naissance
+            </li>
+            <li class="admission-documents--item">
+              <i class="far fa-dot-circle"></i>Une photocopie de la carte
+              d’identité nationale
+            </li>
+            <li class="admission-documents--item">
+              <i class="far fa-dot-circle"></i>3 photocopies certifiées
+              conformes du diplôme Baccalauréat
+            </li>
+            <li class="admission-documents--item">
+              <i class="far fa-dot-circle"></i>2 photocopies certifiées
+              conformes de bulletins de notes des 2 dernières années d’études
+            </li>
+            <li class="admission-documents--item">
+              <i class="far fa-dot-circle"></i>2 relevés de notes années
+              réussies après le bac
+            </li>
+            <li class="admission-documents--item">
+              <i class="far fa-dot-circle"></i>3 photocopies certifiées
+              conformes du dernier diplôme obtenu
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
