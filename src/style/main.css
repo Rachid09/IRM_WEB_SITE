@@ -28,7 +28,7 @@ a {
 
 .text-font {
   font-family: "ABeeZee", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2;
   color: #858585; }
 
@@ -389,7 +389,7 @@ a {
   .events__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem; }
+    grid-gap: 4rem; }
   .events__card {
     grid-column: span 1;
     font-family: "ABeeZee", sans-serif;
@@ -554,3 +554,10 @@ a {
       .programme .module--objective h2 {
         position: absolute;
         top: -3rem; }
+
+.events-page {
+  padding: 2rem 0 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem; }
+  .events-page .events__container {
+    grid-gap: 4rem; }

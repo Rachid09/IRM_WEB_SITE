@@ -3,7 +3,7 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 4rem;
   }
   &__card {
     grid-column: span 1;
