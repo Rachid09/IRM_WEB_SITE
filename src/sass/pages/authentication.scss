@@ -1,0 +1,30 @@
+.authentication {
+  padding: 0 5rem 5rem;
+  &__container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  &__form {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    form {
+      padding: 6rem 4rem 4rem;
+
+      border: 1px solid $gray-footer;
+      border-radius: 4px;
+    }
+    .logo {
+      background-color: #fff;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      position: absolute;
+      top: -1.9rem;
+      z-index: 10;
+    }
+  }
+}

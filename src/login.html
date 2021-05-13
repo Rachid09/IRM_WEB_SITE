@@ -57,59 +57,36 @@
         </ul>
       </nav>
     </div>
-     <section class="statistics pd-md-3">
-        <ul class="statistics__elements">
-          <li class="statistics__element">
-            <i class="iconsminds-trophy"></i>
-            <div class="description">
-              <h3 class="heading-third">35 ans</h3>
-              <p class="sub-heading">d'experineces</p>
-            </div>
-          </li>
-          <li class="statistics__element">
-            <i class="iconsminds-student-male-female"></i>
-            <div class="description">
-              <h3 class="heading-third">60</h3>
-              <p class="sub-heading">Etudiants</p>
-            </div>
-          </li>
-          <li class="statistics__element">
-            <i class="iconsminds-administrator"></i>
-            <div class="description">
-              <h3 class="heading-third">10</h3>
-              <p class="sub-heading">Enseignants</p>
-            </div>
-          </li>
-          <li class="statistics__element">
-            <i class="iconsminds-books"></i>
-            <div class="description">
-              <h3 class="heading-third">12</h3>
-              <p class="sub-heading">Modules</p>
-            </div>
-          </li>
-        </ul>
-      </section>
 
-    <section class="objective pt-3 pb-3 pd-md-3">
-      <h1 class="heading-primary mb-3">Debouchès de la formation</h1>
-      <div class="objective__wrapper">
-        <div class="description">
-          <p class="text-font">
-            D’une part, le lauréat de la LST_IRM peut intervenir généralement
-            pour le compte de sociétés de services et d’ingénierie informatiques
-            et dans de nombreux domaines applicatifs (industrie, gestion,
-            loisirs…), et exercer diverses fonctions, selon ses aptitudes et
-            motivations autant que : Informaticien en Techniques de
-            Développement Multimédia Informaticien en Réseau et Télécom
-            Multimédia D’autre part, le lauréat de LST_IRM peut s’inscrire dans
-            un cursus de formation doctorale en poursuivant ses études en master
-            fondamental ou de recherche dans le même établissement ou un autre
-            externe. Et accéder finalement à un Centre des Etudes Doctorale CED
-            pour préparer sa thèse.
-          </p>
-        </div>
-        <div class="image">
-          <img src="./img/resized/0 1.jpg" alt="" />
+    <section class="authentication">
+      <h1 class="heading-primary text-center mt-4 mb-6">Login</h1>
+      <div class="authentication__container">
+        <div class="authentication__form">
+          <div class="logo">
+            <img src="./img/Frame.png" alt="" />
+          </div>
+          <form action="login.php" method="post">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="CNE*"
+              name="cne"
+            />
+            <input
+              class="form__input"
+              name="mot_pass"
+              type="password"
+              placeholder="Password"
+            />
+
+            <input
+              type="submit"
+              class="form__input cta-btn"
+              placeholder=""
+              name=""
+              value="Se connecter"
+            />
+          </form>
         </div>
       </div>
     </section>

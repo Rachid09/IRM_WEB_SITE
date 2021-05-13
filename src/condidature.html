@@ -57,59 +57,125 @@
         </ul>
       </nav>
     </div>
-     <section class="statistics pd-md-3">
-        <ul class="statistics__elements">
-          <li class="statistics__element">
-            <i class="iconsminds-trophy"></i>
-            <div class="description">
-              <h3 class="heading-third">35 ans</h3>
-              <p class="sub-heading">d'experineces</p>
-            </div>
-          </li>
-          <li class="statistics__element">
-            <i class="iconsminds-student-male-female"></i>
-            <div class="description">
-              <h3 class="heading-third">60</h3>
-              <p class="sub-heading">Etudiants</p>
-            </div>
-          </li>
-          <li class="statistics__element">
-            <i class="iconsminds-administrator"></i>
-            <div class="description">
-              <h3 class="heading-third">10</h3>
-              <p class="sub-heading">Enseignants</p>
-            </div>
-          </li>
-          <li class="statistics__element">
-            <i class="iconsminds-books"></i>
-            <div class="description">
-              <h3 class="heading-third">12</h3>
-              <p class="sub-heading">Modules</p>
-            </div>
-          </li>
-        </ul>
-      </section>
+    <section class="statistics pd-md-3">
+      <ul class="statistics__elements">
+        <li class="statistics__element">
+          <i class="iconsminds-trophy"></i>
+          <div class="description">
+            <h3 class="heading-third">35 ans</h3>
+            <p class="sub-heading">d'experineces</p>
+          </div>
+        </li>
+        <li class="statistics__element">
+          <i class="iconsminds-student-male-female"></i>
+          <div class="description">
+            <h3 class="heading-third">60</h3>
+            <p class="sub-heading">Etudiants</p>
+          </div>
+        </li>
+        <li class="statistics__element">
+          <i class="iconsminds-administrator"></i>
+          <div class="description">
+            <h3 class="heading-third">10</h3>
+            <p class="sub-heading">Enseignants</p>
+          </div>
+        </li>
+        <li class="statistics__element">
+          <i class="iconsminds-books"></i>
+          <div class="description">
+            <h3 class="heading-third">12</h3>
+            <p class="sub-heading">Modules</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="condidature">
+      <h1 class="heading-primary mb-6">Formulaire de pré-inscription</h1>
+      <div class="condidature__container">
+        <figure class="condidature__image">
+          <img src="./img/resized/8.jpg" alt="" />
+          <img src="./img/resized/1 2.jpg" alt="" srcset="" />
+        </figure>
+        <div class="condidature__form">
+          <form action="condidature.php" method="post">
+            <select name="civilité" class="form__input">
+              <option value="Mme">Civilité*</option>
+              <option value="Mme">Mr</option>
+              <option value="Mme">Mme</option>
+              <option value="Mme">Mlle</option>
+            </select>
+            <input
+              class="form__input"
+              name="nom"
+              type="text"
+              placeholder="Nom"
+            />
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Prenom"
+              name=""
+            />
+            <input
+              type="text"
+              class="form__input"
+              placeholder="CNE*"
+              name="cne"
+            />
+            <select name="Pays" class="form__input">
+              <option value="">Pays*</option>
+              <option value="">maroc</option>
+              <option value="">Mali</option>
+              <option value="">Senegal</option>
+            </select>
 
-    <section class="objective pt-3 pb-3 pd-md-3">
-      <h1 class="heading-primary mb-3">Debouchès de la formation</h1>
-      <div class="objective__wrapper">
-        <div class="description">
-          <p class="text-font">
-            D’une part, le lauréat de la LST_IRM peut intervenir généralement
-            pour le compte de sociétés de services et d’ingénierie informatiques
-            et dans de nombreux domaines applicatifs (industrie, gestion,
-            loisirs…), et exercer diverses fonctions, selon ses aptitudes et
-            motivations autant que : Informaticien en Techniques de
-            Développement Multimédia Informaticien en Réseau et Télécom
-            Multimédia D’autre part, le lauréat de LST_IRM peut s’inscrire dans
-            un cursus de formation doctorale en poursuivant ses études en master
-            fondamental ou de recherche dans le même établissement ou un autre
-            externe. Et accéder finalement à un Centre des Etudes Doctorale CED
-            pour préparer sa thèse.
-          </p>
-        </div>
-        <div class="image">
-          <img src="./img/resized/0 1.jpg" alt="" />
+            <input type="text" class="form__input" placeholder="Tele" name="" />
+            <input
+              type="email"
+              class="form__input"
+              placeholder="Email"
+              name=""
+            />
+            <input
+              class="form__input"
+              name="mot_pass"
+              type="password"
+              placeholder="Password"
+            />
+
+            <select name="serie_bacc" class="form__input">
+              <option value="">Série du Baccalauréat</option>
+              <option value="">physique</option>
+              <option value="">Science maths</option>
+              <option value="">international</option>
+            </select>
+            <select name="serie_bacc" class="form__input">
+              <option value="">Année du Baccalauréat</option>
+              <option value="">2019</option>
+              <option value="">2020</option>
+              <option value="">2021</option>
+            </select>
+
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Etablissement superieur précédente"
+              name=""
+            />
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Diplome supérieur obtenu"
+              name=""
+            />
+            <input
+              type="submit"
+              class="form__input cta-btn"
+              placeholder=""
+              name=""
+              value="Je condidate"
+            />
+          </form>
         </div>
       </div>
     </section>

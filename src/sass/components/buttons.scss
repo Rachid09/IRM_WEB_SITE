@@ -1,11 +1,15 @@
 .cta-btn {
   padding: 12px 31px 12px 31px;
   font-size: 1rem;
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: $bg-blue;
   text-decoration: none;
   border-radius: 2px;
   font-family: $abeeze;
+  &:hover {
+    background-color: #088bf7;
+    transition: 0.2s all ease-out;
+  }
 }
 
 .btn-inline {
