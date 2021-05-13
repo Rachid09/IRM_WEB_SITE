@@ -562,6 +562,19 @@ button {
         position: absolute;
         top: -3rem; }
 
+.organisation-modules__table {
+  border-collapse: collapse; }
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 0.4rem; }
+
+.organisation-module {
+  width: 80%;
+  margin: auto; }
+
 .events-page {
   padding: 2rem 0 5rem;
   padding-left: 3rem;
